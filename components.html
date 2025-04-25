@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/components.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+  <header class="gaming-header">
+    <!-- Logo Section -->
+    <div class="logo">
+      <a href="index.html" class="logo-link" aria-label="Go to Home">
+        <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+        <h1><span class="titan">TITAN</span> GAMING</h1>
+      </a>
+    </div>
+  
+    <!-- Hamburger Menu for Mobile -->
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+  
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#our-mission">Our Mission</a></li>
+            <li><a href="about.html#our-services">Our Services</a></li>
+            <li><a href="about.html#our-stores">Our Stores</a></li>
+            <li><a href="about.html#our-team">Our Team</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="games.html">Games</a></li>
+        <li><a href="components.html">Components</a></li>
+  
+        <li class="dropdown">
+          <a href="#">Accessories</a>
+          <ul class="dropdown-menu">
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="peripharals.html">Peripharals</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="faq.html">FAQ & Forums</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+      <button class="search-btn" aria-label="Submit search">Search</button>
+    </div>
+    <script>
+        const hamburger = document.getElementById("hamburger-menu");
+        const navbar = document.getElementById("navbar");
+      
+        hamburger.addEventListener("click", () => {
+          const expanded = hamburger.getAttribute("aria-expanded") === "true";
+          hamburger.setAttribute("aria-expanded", !expanded);
+          hamburger.classList.toggle("active");
+          navbar.classList.toggle("active");
+        });
+      </script>
+      
+  </header>
+
+
+
+<section class="store-introduction">
+  <div class="container">
+    <div class="intro-content">
+      <h2>Gear Up Your Setup</h2>
+      <p>Choose your parts. Build your dream rig. Game without limits.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+<main class="components-main">
+<!-- Processors -->
+<section class="components-section">
+  <h2 class="section-heading">Processors</h2>
+  <div class="components-grid">
+    <div class="component-card" data-name="Ryzen 5 5600X" data-price="136.36">
+      <img src="./Processors/Ryzen 5 5600x.jpg" alt="Ryzen 5 5600X">
+      <h3>Ryzen 5 5600X</h3>
+      <p>USD 136.36</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Intel i5 12400F" data-price="145.45">
+      <img src="./Processors/Intel i5 12400F.jpg" alt="Intel i5 12400F">
+      <h3>Intel i5 12400F</h3>
+      <p>USD 145.45</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Ryzen 7 5800X" data-price="203.03">
+      <img src="./Processors/AMD-RYZEN-7-5800X.png" alt="Ryzen 7 5800X">
+      <h3>Ryzen 7 5800X</h3>
+      <p>USD 203.03</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Intel i7 12700K" data-price="269.70">
+      <img src="./Processors/Intel i7 12700K.jpg" alt="Intel i7 12700K">
+      <h3>Intel i7 12700K</h3>
+      <p>USD 269.70</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Ryzen 9 7900X" data-price="318.18">
+      <img src="./Processors/Ryzen 9 7900X.avif" alt="Ryzen 9 7900X">
+      <h3>Ryzen 9 7900X</h3>
+      <p>USD 318.18</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Intel i9 13900K" data-price="378.79">
+      <img src="./Processors/Intel i9 13900K.jpg" alt="Intel i9 13900K">
+      <h3>Intel i9 13900K</h3>
+      <p>USD 378.79</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="components-section">
+  <h2 class="section-heading">Graphic Cards</h2>
+  <div class="components-grid">
+    <div class="component-card" data-name="RTX 3060" data-price="242.42">
+      <img src="./graphic cards/RTX 3060.jpeg" alt="RTX 3060">
+      <h3>RTX 3060</h3>
+      <p>USD 242.42</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="RTX 4060" data-price="333.33">
+      <img src="./graphic cards/RTX 4060.jpg" alt="RTX 4060">
+      <h3>RTX 4060</h3>
+      <p>USD 333.33</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="RX 6600" data-price="236.36">
+      <img src="./graphic cards/AMDRX6600_Hero.webp" alt="RX 6600">
+      <h3>RX 6600</h3>
+      <p>USD 236.36</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="RX 6700 XT" data-price="287.88">
+      <img src="./graphic cards/RX 6700 XT.webp" alt="RX 6700 XT">
+      <h3>RX 6700 XT</h3>
+      <p>USD 287.88</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="RTX 4070" data-price="409.09">
+      <img src="./graphic cards/RTX 4070.jpg" alt="RTX 4070">
+      <h3>RTX 4070</h3>
+      <p>USD 409.09</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="RTX 4080" data-price="545.45">
+      <img src="./graphic cards/RTX 4080.jpg" alt="RTX 4080">
+      <h3>RTX 4080</h3>
+      <p>USD 545.45</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="components-section">
+  <h2 class="section-heading">Motherboards</h2>
+  <div class="components-grid">
+    <div class="component-card" data-name="MSI B550M" data-price="96.97">
+      <img src="./motherboards/MSI B550M.jpg" alt="MSI B550M">
+      <h3>MSI B550M</h3>
+      <p>USD 96.97</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="ASUS TUF B650" data-price="145.45">
+      <img src="./motherboards/ASUS TUF B650.jpg" alt="ASUS TUF B650">
+      <h3>ASUS TUF B650</h3>
+      <p>USD 145.45</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Gigabyte X570" data-price="187.88">
+      <img src="./motherboards/Gigabyte X570.jpg" alt="Gigabyte X570">
+      <h3>Gigabyte X570</h3>
+      <p>USD 187.88</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="ASRock B660" data-price="160.61">
+      <img src="./motherboards/ASRock B660.png" alt="ASRock B660">
+      <h3>ASRock B660</h3>
+      <p>USD 160.61</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="ASUS ROG Z790" data-price="290.91">
+      <img src="./motherboards/ASUS ROG Z790.png" alt="ASUS ROG Z790">
+      <h3>ASUS ROG Z790</h3>
+      <p>USD 290.91</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="MSI Z690" data-price="269.70">
+      <img src="./motherboards/ASUS ROG Z790.png" alt="MSI Z690">
+      <h3>MSI Z690</h3>
+      <p>USD 269.70</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<section class="components-section">
+  <h2 class="section-heading">Memory (RAM)</h2>
+  <div class="components-grid">
+    <div class="component-card" data-name="Corsair 8GB" data-price="24.24">
+      <img src="./ram/Corsair 8GB.jpg" alt="Corsair 8GB">
+      <h3>Corsair 8GB</h3>
+      <p>USD 24.24</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Kingston 16GB" data-price="48.48">
+      <img src="./ram/Kingston 16GB.jpg" alt="Kingston 16GB">
+      <h3>Kingston 16GB</h3>
+      <p>USD 48.48</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="G.Skill 32GB" data-price="96.97">
+      <img src="./ram/G.Skill 32GB.webp" alt="G.Skill 32GB">
+      <h3>G.Skill 32GB</h3>
+      <p>USD 96.97</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Crucial Ballistix 8GB" data-price="28.79">
+      <img src="./ram/Crucial Ballistix 8GB.jpg" alt="Crucial Ballistix 8GB">
+      <h3>Crucial Ballistix 8GB</h3>
+      <p>USD 28.79</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+  
+<section class="components-section">
+  <h2 class="section-heading">Storage Devices</h2>
+  <div class="components-grid">
+    <div class="component-card" data-name="WD Blue 1TB" data-price="22.73">
+      <img src="./storage devices/WD Blue 1TB.webp" alt="WD Blue 1TB">
+      <h3>WD Blue 1TB</h3>
+      <p>USD 22.73</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Samsung 970 EVO 500GB" data-price="36.36">
+      <img src="./storage devices/Samsung 970 EVO 500GB.webp" alt="Samsung 970 EVO 500GB">
+      <h3>Samsung 970 EVO 500GB</h3>
+      <p>USD 36.36</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Seagate Barracuda 2TB" data-price="54.55">
+      <img src="./storage devices/Seagate Barracuda 2TB.jpg" alt="Seagate Barracuda 2TB">
+      <h3>Seagate Barracuda 2TB</h3>
+      <p>USD 54.55</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Crucial P3 1TB" data-price="42.42">
+      <img src="./storage devices/Crucial P3 1TB.jpg" alt="Crucial P3 1TB">
+      <h3>Crucial P3 1TB</h3>
+      <p>USD 42.42</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Kingston NV2 1TB" data-price="40.91">
+      <img src="./storage devices/Kingston NV2 1TB.jpg" alt="Kingston NV2 1TB">
+      <h3>Kingston NV2 1TB</h3>
+      <p>USD 40.91</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+    <div class="component-card" data-name="Samsung T7 SSD" data-price="78.79">
+      <img src="./storage devices/Samsung T7 SSD.jpg" alt="Samsung T7 SSD">
+      <h3>Samsung T7 SSD</h3>
+      <p>USD 78.79</p>
+      <label>Qty: <input type="number" min="0" value="0" class="qty-input"></label>
+      <button class="btn-primary add-to-cart">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+
+
+  <section class="cart-summary-section">
+    <h2 class="section-heading">Cart Summary</h2>
+    <div id="cart-table-container" class="order-table-container">
+      <!-- Cart table will be injected by JavaScript -->
+    </div>
+  </section>
+
+<div class="checkout-buttons-split">
+  <div class="left-buttons">
+    <button class="btn-primary" onclick="saveToFavourites()">Add to Favourites</button>
+    <button class="btn-primary" onclick="applyFavourites()">Apply Favourites</button>
+  </div>
+  <div class="right-buttons">
+    <a href="checkout.html" class="btn-primary">Proceed to Checkout</a>
+    <button class="btn-primary" onclick="clearCart()">Clear Cart</button>
+  </div>
+</div>
+
+  
+  </main>
+  
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="advanced-footer">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="./index.html"> <!-- Link to homepage -->
+                    <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                </a>
+                <h1><span class="titan">TITAN</span> GAMING</h1>
+                <p>Where gamers unite and conquer!</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="faq.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                </ul>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Middle Section -->
+        <div class="footer-middle">
+            <div class="features">
+                <h3>Why Titan Gaming?</h3>
+                <ul>
+                    <li>Exclusive Game Releases</li>
+                    <li>Top Leaderboards</li>
+                    <li>Weekly Gaming Events</li>
+                    <li>24/7 Support for Gamers</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+  <div id="toast" class="toast-notification"></div>
+
+  <script src="./scripts/components.js"></script>
+   
+</body>
+</html>

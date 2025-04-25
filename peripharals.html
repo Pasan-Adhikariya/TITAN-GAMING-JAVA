@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/peripharals.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+
+
+
+
+
+
+
+
+
+
+<!-- HERO SECTION -->
+<section class="hero-section">
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="videos/about us/arcade vj loop.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">Unleash the Ultimate Gaming Experience</h1>
+      <p class="hero-description">
+        Dive into a world of adventure with the latest consoles, thrilling games, and cutting-edge accessories.
+      </p>
+      <button class="cta-button">Explore Now</button>
+    </div>
+  </section>
+  
+  <!-- INTRO SECTION -->
+  <section class="console-intro-section">
+    <div class="intro-container">
+      <h2 class="intro-title">Explore Our Collection</h2>
+      <p class="intro-description">
+        We offer top-of-the-line gaming consoles and high-performance peripherals to match your unique style and play.
+      </p>
+      <p class="intro-highlight">Gear up with style and precision.</p>
+    </div>
+  </section>
+  
+ <!-- PRODUCT GRID SECTION -->
+<section class="consoles-grid-section">
+  <div class="section-header">
+    <h2 class="section-title">Gaming Peripherals Collection</h2>
+    <p class="section-description">Browse our handpicked selection of elite peripherals.</p>
+  </div>
+
+  <div class="consoles-grid">
+
+    <!-- Product Card 1 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/keyboard/Razer Huntsman Elite Keyboard.jpg" alt="Razer Huntsman Elite">
+        <div class="console-price">$99.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Razer Huntsman Elite</h3>
+        <ul class="console-specs">
+          <li>Optical Switches</li>
+          <li>RGB Lighting</li>
+          <li>Detachable Wrist Rest</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ☆ <span class="rating-count">(320)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/mice/Logitech G502 HERO Mouse.jpg" alt="Logitech G502 HERO">
+        <div class="console-price">$49.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Logitech G502 HERO</h3>
+        <ul class="console-specs">
+          <li>Precision Sensor</li>
+          <li>Customizable Weights</li>
+          <li>RGB + 11 Buttons</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ★ <span class="rating-count">(500)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/headset/SteelSeries Arctis 7 Headset.jpg" alt="SteelSeries Arctis 7">
+        <div class="console-price">$79.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">SteelSeries Arctis 7</h3>
+        <ul class="console-specs">
+          <li>Wireless + DTS Sound</li>
+          <li>Noise Cancel Mic</li>
+          <li>20+ Hour Battery</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ☆ <span class="rating-count">(275)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/ASUS ROG Swift PG279Q Monitor.jpg" alt="ASUS ROG Swift PG279Q">
+        <div class="console-price">$299.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">ASUS ROG Swift PG279Q</h3>
+        <ul class="console-specs">
+          <li>27" QHD</li>
+          <li>165Hz Refresh Rate</li>
+          <li>NVIDIA G-SYNC</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ★ <span class="rating-count">(620)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/Xbox Elite Series 2 Controller.webp" alt="Xbox Elite Series 2">
+        <div class="console-price">$59.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Xbox Elite Series 2</h3>
+        <ul class="console-specs">
+          <li>Adjustable Thumbsticks</li>
+          <li>Rechargeable Battery</li>
+          <li>Interchangeable Parts</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ☆ <span class="rating-count">(700)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 6 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/Secretlab Titan Gaming Chair.webp" alt="Secretlab Titan">
+        <div class="console-price">$199.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Secretlab Titan</h3>
+        <ul class="console-specs">
+          <li>4D Armrests</li>
+          <li>Memory Foam Support</li>
+          <li>PU Leather Finish</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ★ <span class="rating-count">(920)</span></div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Product Card 7 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/NZXT H510 Elite PC Case.jpg" alt="NZXT H510 Elite">
+        <div class="console-price">$119.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">NZXT H510 Elite</h3>
+        <ul class="console-specs">
+          <li>Tempered Glass Panels</li>
+          <li>Smart RGB Control</li>
+          <li>USB-C Front Panel</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ☆ <span class="rating-count">(490)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 8 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/HyperX QuadCast Microphone.webp" alt="HyperX QuadCast">
+        <div class="console-price">$89.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">HyperX QuadCast</h3>
+        <ul class="console-specs">
+          <li>Anti-Vibration Shock Mount</li>
+          <li>Tap-to-Mute</li>
+          <li>4 Polar Patterns</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ★ <span class="rating-count">(810)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 9 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/Headphone/SteelSeries Arctis Pro.jpg" alt="SteelSeries Arctis Pro">
+        <div class="console-price">$199.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">SteelSeries Arctis Pro</h3>
+        <ul class="console-specs">
+          <li>DTS Headphone:X v2.0</li>
+          <li>Hi-Res Audio</li>
+          <li>ClearCast Mic</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ★ <span class="rating-count">(660)</span></div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Product Card 10 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/Headphone/Razer Kraken Ultimate.jpg" alt="Razer Kraken Ultimate">
+        <div class="console-price">$129.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Razer Kraken Ultimate</h3>
+        <ul class="console-specs">
+          <li>THX Spatial Audio</li>
+          <li>Active Noise Cancellation</li>
+          <li>Retractable Microphone</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ☆ <span class="rating-count">(510)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 11 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/Headphone/Logitech G Pro X Wireless.jpg" alt="Logitech G Pro X Wireless">
+        <div class="console-price">$149.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Logitech G Pro X Wireless</h3>
+        <ul class="console-specs">
+          <li>Pro-Grade Wireless</li>
+          <li>Blue VO!CE Mic Tech</li>
+          <li>DTS Headphone:X 2.0</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ★ <span class="rating-count">(425)</span></div>
+      </div>
+    </div>
+
+    <!-- Product Card 12 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="peripharals/mice/SteelSeries Rival 600.jpg" alt="SteelSeries Rival 600">
+        <div class="console-price">$59.99</div>
+        <div class="console-hover">
+          <button class="view-details">Buy Now</button>
+        </div>
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">SteelSeries Rival 600</h3>
+        <ul class="console-specs">
+          <li>Dual Sensor System</li>
+          <li>Lift-off Detection</li>
+          <li>Weight Tuning System</li>
+        </ul>
+        <div class="console-rating">★ ★ ★ ★ ☆ <span class="rating-count">(300)</span></div>
+      </div>
+    </div>
+
+  </div> 
+<!-- SPACER SECTION -->
+<section class="spacer-section"></section>
+
+
+
+
+
+
+
+
+     <!-- Footer Section -->
+     <footer class="advanced-footer">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="./index.html"> <!-- Link to homepage -->
+                    <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                </a>
+                <h1><span class="titan">TITAN</span> GAMING</h1>
+                <p>Where gamers unite and conquer!</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="faq.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                </ul>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Middle Section -->
+        <div class="footer-middle">
+            <div class="features">
+                <h3>Why Titan Gaming?</h3>
+                <ul>
+                    <li>Exclusive Game Releases</li>
+                    <li>Top Leaderboards</li>
+                    <li>Weekly Gaming Events</li>
+                    <li>24/7 Support for Gamers</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

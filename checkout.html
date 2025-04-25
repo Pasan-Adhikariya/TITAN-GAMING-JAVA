@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/checkout.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+
+</head>
+<body>
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+      
+
+
+
+
+      <main class="components-main">
+        <!-- Cart Summary Section -->
+        <section class="components-section">
+          <h2 class="section-heading">Order Summary</h2>
+          <div id="checkout-cart-container" class="order-table-container">
+            <!-- JavaScript will populate cart summary here -->
+          </div>
+        </section>
+      
+        <!-- Customer Details Form -->
+        <section class="components-section">
+          <h2 class="section-heading">Customer Details</h2>
+          <form id="checkout-form" novalidate>
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="text" id="fullname" name="fullname" placeholder="e.g. John Doe" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="+94 77 123 4567" required />
+            </div>
+      
+            <div class="form-group">
+              <label for="address">Delivery Address</label>
+              <textarea id="address" name="address" rows="4" placeholder="123, Street Name, City" required></textarea>
+            </div>
+      
+            <div class="form-group">
+              <label for="payment">Payment Method</label>
+              <select id="payment" name="payment" required>
+                <option value="">-- Select Payment Method --</option>
+                <option value="card">Credit / Debit Card</option>
+                <option value="cash">Cash on Delivery</option>
+              </select>
+            </div>
+      
+            <!-- Card Details Section (Shown only if payment is "card") -->
+            <div id="card-details" style="display: none;">
+              <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" placeholder="1234 5678 9012 3456" />
+              </div>
+      
+              <div class="form-group">
+                <label for="expiry">Expiry Date</label>
+                <input type="month" id="expiry" />
+              </div>
+      
+              <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" placeholder="123" />
+              </div>
+            </div>
+      
+            <div class="checkout-button-container">
+              <button type="submit" class="btn-primary">Pay Now</button>
+            </div>
+          </form>
+      
+          <!-- Confirmation message after payment -->
+          <div id="confirmation-message" class="confirmation-message" style="display: none;"></div>
+        </section>
+      </main>
+      
+      <!-- Toast Notification -->
+      <div id="toast" class="toast-notification"></div>
+      
+      <!-- Link your JavaScript here -->
+      <script src="./scripts/checkout.js"></script>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="advanced-footer">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="./index.html"> <!-- Link to homepage -->
+                    <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                </a>
+                <h1><span class="titan">TITAN</span> GAMING</h1>
+                <p>Where gamers unite and conquer!</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="faq.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                </ul>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Middle Section -->
+        <div class="footer-middle">
+            <div class="features">
+                <h3>Why Titan Gaming?</h3>
+                <ul>
+                    <li>Exclusive Game Releases</li>
+                    <li>Top Leaderboards</li>
+                    <li>Weekly Gaming Events</li>
+                    <li>24/7 Support for Gamers</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+   
+      
+</body>
+</html>

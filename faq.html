@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/faq.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+
+
+
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <h2 class="faq-title">Frequently Asked Questions</h2>
+    <p class="faq-description">Find answers to some of the most common questions about our store.</p>
+
+    <!-- FAQ Items -->
+    <details class="faq-item">
+        <summary class="faq-question">What are your store hours?</summary>
+        <div class="faq-answer">
+            Our stores are open daily from 9:00 AM to 9:00 PM.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary class="faq-question">Do you offer online ordering?</summary>
+        <div class="faq-answer">
+            Yes, we offer online ordering for select products. Visit our website to place an order.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary class="faq-question">Where are your stores located?</summary>
+        <div class="faq-answer">
+            Our stores are located in Colombo, Kandy, Galle, Negombo, Jaffna, and Kurunegala.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary class="faq-question">What payment methods do you accept?</summary>
+        <div class="faq-answer">
+            We accept all major credit/debit cards, as well as mobile payment options like PayPal.
+        </div>
+    </details>
+
+    <details class="faq-item">
+        <summary class="faq-question">Do you offer discounts on bulk purchases?</summary>
+        <div class="faq-answer">
+            Yes, we offer bulk purchase discounts for large orders. Contact us for more details.
+        </div>
+    </details>
+</section>
+
+
+
+
+
+
+
+<section id="question-form" class="question-form">
+    <h2 class="form-title">Have a Question? We're Here to Help!</h2>
+    <p class="form-description">Fill out the form below to send your inquiry to the store owner. We’ll get back to you as soon as possible!</p>
+
+    <form class="form-content" action="#" method="post">
+        <div class="form-group">
+            <label for="name" class="label-text">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required />
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="label-text">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required />
+        </div>
+
+        <div class="form-group">
+            <label for="question" class="label-text">Your Question</label>
+            <textarea id="question" name="question" class="form-textarea" placeholder="Write your question here..." rows="6" required></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="question-category" class="label-text">Question Category</label>
+            <select id="question-category" name="category" class="form-select" required>
+                <option value="" disabled selected>Select a category</option>
+                <option value="general">General Inquiry</option>
+                <option value="product">Product Information</option>
+                <option value="service">Service Inquiry</option>
+                <option value="order">Order Related</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" class="form-checkbox" />
+                Subscribe to our newsletter for updates and offers.
+            </label>
+        </div>
+
+        <button type="submit" class="submit-button">Submit Your Question</button>
+    </form>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="advanced-footer">
+    <!-- Footer Top Section -->
+    <div class="footer-top">
+        <div class="footer-brand">
+            <a href="./index.html"> <!-- Link to homepage -->
+                <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+            </a>
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+            <p>Where gamers unite and conquer!</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-navigation">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h3>Stay Connected</h3>
+            <ul>
+                <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+            </ul>
+        </div>
+    
+        <!-- Newsletter Section -->
+        <div class="footer-newsletter">
+            <h3>Join Our Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Middle Section -->
+    <div class="footer-middle">
+        <div class="features">
+            <h3>Why Titan Gaming?</h3>
+            <ul>
+                <li>Exclusive Game Releases</li>
+                <li>Top Leaderboards</li>
+                <li>Weekly Gaming Events</li>
+                <li>24/7 Support for Gamers</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+        <ul class="legal-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+    
+</body>
+</html>

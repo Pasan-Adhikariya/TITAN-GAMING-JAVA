@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/about.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="about-hero">
+    <video class="hero-video" autoplay muted loop>
+        <source src="./videos/about us/arcade vj loop.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <h1>ABOUT US</h1>
+            <p>At Titan Gaming, we bring the world of gaming to your fingertips. As a premier destination for gamers, we offer a vast collection of the latest and greatest games across all platforms. Our mission is to deliver excitement, adventure, and endless entertainment while providing top-notch service and unbeatable deals. Explore our catalog, discover your next favorite game, and let the adventures begin!
+            </p>
+            <a href="#our-stores" class="hero-btn">More</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Our Mission Section -->
+<section id="our-mission" class="our-mission">
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p class="mission-description">
+            At TITAN GAMING, our mission is to provide gamers with the best selection of games, gaming consoles, and accessories at competitive prices. We are committed to creating an inclusive, fun, and welcoming community where gaming enthusiasts can come together and enjoy their passion for gaming. We strive to offer exceptional customer service and an unparalleled shopping experience, making sure that every gamer, whether a beginner or expert, finds the perfect product.
+        </p>
+        
+        <div class="mission-values">
+            <div class="value-item">
+                <h3>Quality Products</h3>
+                <p>We only offer high-quality games and gaming accessories that meet the expectations of our customers.</p>
+            </div>
+            <div class="value-item">
+                <h3>Customer First</h3>
+                <p>Our customers are our top priority. We ensure that every shopper receives exceptional service and support.</p>
+            </div>
+            <div class="value-item">
+                <h3>Innovation</h3>
+                <p>We embrace the latest technologies and trends in gaming, making sure that we always have the newest and most exciting products available.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<!-- Our Services Section -->
+<section id="our-services" class="our-services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+        <div class="service">
+            <img src="./Services/home-content-bg.jpg" alt="Game Rentals" class="service-icon">
+            <h3>Game Rentals</h3>
+            <p>Rent the latest and greatest games for all major platforms. Enjoy hassle-free gaming at affordable rates.</p>
+        </div>
+        <div class="service">
+            <img src="./Services/2320927683_b9e4591c67_n.jpg" alt="Game Sales" class="service-icon">
+            <h3>Game Sales</h3>
+            <p>Get your hands on new and pre-owned games with unbeatable prices. From the latest releases to classic hits.</p>
+        </div>
+        <div class="service">
+            <img src="./Services/pexels-lulizler-3165335.jpg" alt="Gaming Accessories" class="service-icon">
+            <h3>Gaming Accessories</h3>
+            <p>We offer a wide range of gaming accessories, including controllers, headsets, and more to enhance your gaming experience.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- Store Locations Section -->
+<section id="our-stores" class="store-branches">
+    <h2>Our Store Locations</h2>
+
+    <!-- Store 1: Colombo -->
+    <div class="store">
+        <div class="store-image">
+            <img src="./Branches/2320927683_b9e4591c67_n.jpg" alt="Store in Colombo">
+        </div>
+        <div class="store-details">
+            <div class="store-info">
+                <h3>Colombo Branch</h3>
+                <p>Address: No. 123, Galle Road, Colombo 03</p>
+                <p>Opening Hours: 9:00 AM - 9:00 PM</p>
+                <p>Closing Hours: 9:00 PM</p>
+                <div class="store-map">
+                    <iframe src="https://maps.google.com/maps?q=Colombo%2C%20Sri%20Lanka&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store 2: Kandy -->
+    <div class="store">
+        <div class="store-image">
+            <img src="./Branches/titan-gaming-lang-son-3d-1024x576.jpg.webp" alt="Store in Kandy">
+        </div>
+        <div class="store-details">
+            <div class="store-info">
+                <h3>Kandy Branch</h3>
+                <p>Address: No. 45, Peradeniya Road, Kandy</p>
+                <p>Opening Hours: 9:00 AM - 8:00 PM</p>
+                <p>Closing Hours: 8:00 PM</p>
+                <div class="store-map">
+                    <iframe src="https://maps.google.com/maps?q=Kandy%2C%20Sri%20Lanka&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store 3: Galle -->
+    <div class="store">
+        <div class="store-image">
+            <img src="./Branches/titan-gaming-lang-son-3d-3-1024x576.jpg.webp" alt="Store in Galle">
+        </div>
+        <div class="store-details">
+            <div class="store-info">
+                <h3>Galle Branch</h3>
+                <p>Address: No. 50, Main Street, Galle</p>
+                <p>Opening Hours: 9:00 AM - 7:00 PM</p>
+                <p>Closing Hours: 7:00 PM</p>
+                <div class="store-map">
+                    <iframe src="https://maps.google.com/maps?q=Galle%2C%20Sri%20Lanka&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store 4: Negombo -->
+    <div class="store">
+        <div class="store-image">
+            <img src="./Branches/titan-gaming-lang-son-hoan-thien-1.jpg" alt="Store in Negombo">
+        </div>
+        <div class="store-details">
+            <div class="store-info">
+                <h3>Negombo Branch</h3>
+                <p>Address: No. 15, Sea Street, Negombo</p>
+                <p>Opening Hours: 9:00 AM - 9:00 PM</p>
+                <p>Closing Hours: 9:00 PM</p>
+                <div class="store-map">
+                    <iframe src="https://maps.google.com/maps?q=Negombo%2C%20Sri%20Lanka&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store 5: Jaffna -->
+    <div class="store">
+        <div class="store-image">
+            <img src="./Branches/titan-gaming-lang-son-hoan-thien-5.jpg" alt="Store in Jaffna">
+        </div>
+        <div class="store-details">
+            <div class="store-info">
+                <h3>Jaffna Branch</h3>
+                <p>Address: No. 10, Jaffna Road, Jaffna</p>
+                <p>Opening Hours: 8:30 AM - 7:30 PM</p>
+                <p>Closing Hours: 7:30 PM</p>
+                <div class="store-map">
+                    <iframe src="https://maps.google.com/maps?q=Jaffna%2C%20Sri%20Lanka&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Store 6: Kurunegala -->
+    <div class="store">
+        <div class="store-image">
+            <img src="./Branches/lap-dat-phong-game-1-1-1024x713.jpg" alt="Store in Kurunegala">
+        </div>
+        <div class="store-details">
+            <div class="store-info">
+                <h3>Kurunegala Branch</h3>
+                <p>Address: No. 25, Dambulla Road, Kurunegala</p>
+                <p>Opening Hours: 9:00 AM - 8:00 PM</p>
+                <p>Closing Hours: 8:00 PM</p>
+                <div class="store-map">
+                    <iframe src="https://maps.google.com/maps?q=Kurunegala%2C%20Sri%20Lanka&output=embed" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Store Summary Table -->
+<section>
+    <h2 class="store-summary-header">Store Summary</h2>
+    <table class="store-summary-table">
+        <thead>
+            <tr>
+                <th>Store Name</th>
+                <th>Location</th>
+                <th>Opening Hours</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Colombo</td>
+                <td>Galle Road, Colombo 03</td>
+                <td>9:00 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+                <td>Kandy</td>
+                <td>Peradeniya Road, Kandy</td>
+                <td>9:00 AM - 8:00 PM</td>
+            </tr>
+            <tr>
+                <td>Galle</td>
+                <td>Main Street, Galle</td>
+                <td>9:00 AM - 7:00 PM</td>
+            </tr>
+            <tr>
+                <td>Negombo</td>
+                <td>Sea Street, Negombo</td>
+                <td>9:00 AM - 9:00 PM</td>
+            </tr>
+            <tr>
+                <td>Jaffna</td>
+                <td>Jaffna Road, Jaffna</td>
+                <td>8:30 AM - 7:30 PM</td>
+            </tr>
+            <tr>
+                <td>Kurunegala</td>
+                <td>Dambulla Road, Kurunegala</td>
+                <td>9:00 AM - 8:00 PM</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Stores: 6</td>
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+
+
+  
+
+
+
+<!-- Our Team Section -->
+<section id="our-team" class="our-team">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+        <div class="team-member">
+            <img src="./our team/pasan.jpg" alt="John Doe - CEO" class="team-img">
+            <h3>Pasan Adhikariya</h3>
+            <p>CEO & Founder</p>
+            <p>Leading the vision and growth of Titan Gaming, John is dedicated to delivering the best gaming experience.</p>
+        </div>
+        <div class="team-member">
+            <img src="./our team/vihaga.jpg" alt="Jane Smith - Marketing" class="team-img">
+            <h3>Vihaga Sangeeth</h3>
+            <p>Marketing Manager</p>
+            <p>Crafting strategies to bring the latest games and offers to the Titan Gaming community.</p>
+        </div>
+        <div class="team-member">
+            <img src="./our team/chamath.jpg" alt="Sam Lee - Tech Specialist" class="team-img">
+            <h3>Chamath</h3>
+            <p>Tech Specialist</p>
+            <p>Ensuring Titan Gaming runs smoothly with the best tech and innovations for all our customers.</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!-- Footer Section -->
+        <footer class="advanced-footer">
+            <!-- Footer Top Section -->
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="./index.html"> <!-- Link to homepage -->
+                        <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                    </a>
+                    <h1><span class="titan">TITAN</span> GAMING</h1>
+                    <p>Where gamers unite and conquer!</p>
+                </div>
+        
+                <!-- Navigation Links -->
+                <div class="footer-navigation">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="games.html">Games</a></li>
+                        <li><a href="faq.html">Contact</a></li>
+                    </ul>
+                </div>
+            
+                <!-- Social Media Section -->
+                <div class="footer-social">
+                    <h3>Stay Connected</h3>
+                    <ul>
+                        <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                        <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                        <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                        <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                    </ul>
+                </div>
+            
+                <!-- Newsletter Section -->
+                <div class="footer-newsletter">
+                    <h3>Join Our Newsletter</h3>
+                    <form action="#" method="post">
+                        <input type="email" placeholder="Enter your email" aria-label="Email address">
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Middle Section -->
+            <div class="footer-middle">
+                <div class="features">
+                    <h3>Why Titan Gaming?</h3>
+                    <ul>
+                        <li>Exclusive Game Releases</li>
+                        <li>Top Leaderboards</li>
+                        <li>Weekly Gaming Events</li>
+                        <li>24/7 Support for Gamers</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Bottom Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+                <ul class="legal-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Policy</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+</body>
+</html>

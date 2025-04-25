@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/games.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+
+
+
+
+
+
+
+
+<!-- Featured Games Section -->
+<section id="featured-games" class="featured-games">
+    <div class="games-container">
+      <!-- Large Box Section -->
+      <div class="large-box">
+        <h2>Game of the Month</h2>
+        <img src="./Trending Games/Spider man 2/marvels-spider-man-3840x2160-11609.jpeg" alt="Game of the Month" class="large-box-img">
+        <p class="large-box-description">
+          Experience the latest masterpiece from Marvel: Spider-Man 2. Dive into a world of action-packed adventures, cutting-edge graphics, and an unforgettable story. Available now!
+        </p>
+        <button class="explore-btn">Explore Game</button>
+      </div>
+  
+      <!-- Games Box Section (Right Side) -->
+      <div class="games-box">
+        <h2>Top Featured Games</h2>
+        <div class="game-box-row">
+          <div class="game-box">
+            <img src="./Store/Black-ops-6.jpg" alt="Game 4" class="game-box-img">
+            <div class="game-info">
+              <h3>Black Ops 6</h3>
+              <p class="game-genre">Action, Adventure</p>
+              <button class="play-btn">Play Now</button>
+            </div>
+          </div>
+          <div class="game-box">
+            <img src="./Store/FC25.jpg" alt="Game 5" class="game-box-img">
+            <div class="game-info">
+              <h3>FC 25</h3>
+              <p class="game-genre">RPG, Fantasy</p>
+              <button class="play-btn">Play Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="game-box-row">
+          <div class="game-box">
+            <img src="./Store/Fortnite.jpeg" alt="Game 6" class="game-box-img">
+            <div class="game-info">
+              <h3>Fortnite</h3>
+              <p class="game-genre">Strategy, Simulation</p>
+              <button class="play-btn">Play Now</button>
+            </div>
+          </div>
+          <div class="game-box">
+            <img src="./store2/red dead 2.jpg" alt="Game 7" class="game-box-img">
+            <div class="game-info">
+              <h3>Red Dead Redemption 2</h3>
+              <p class="game-genre">Western, Adventure</p>
+              <button class="play-btn">Play Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <section id="all-games" class="all-games">
+    <h2 class="section-title">All Games</h2>
+    <div class="games-grid">
+
+        <!-- Game 1 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./store2/red dead 2.jpg" alt="Red Dead Redemption 2">
+                <div class="hover-description">
+                    <p>Red Dead Redemption 2 is a gripping open-world Western adventure, set in a beautifully crafted world filled with immersive storylines and thrilling gunfights.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Red Dead Redemption 2</h3>
+                <p class="game-genre">Western, Adventure</p>
+                <p><strong>Release Date:</strong> October 26, 2018</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i7, RAM: 16GB, Storage: 100GB</p>
+                <p class="price"><span class="discounted-price">$29.99</span> <span class="original-price">$59.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 2 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/assassins-creed-valhalla-eivor-viking-raider-pc-games-3840x2160-546.jpg" alt="Assassin's Creed Valhalla">
+                <div class="hover-description">
+                    <p>Assassin’s Creed Valhalla takes you on an epic Viking journey as Eivor, a warrior leading a clan of Norse raiders in their quest to conquer England.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Assassin's Creed Valhalla</h3>
+                <p class="game-genre">Action, RPG</p>
+                <p><strong>Release Date:</strong> November 10, 2020</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i7, RAM: 16GB, Storage: 70GB</p>
+                <p class="price"><span class="discounted-price">$24.99</span> <span class="original-price">$49.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 3 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./store2/minecraft.avif" alt="Minecraft">
+                <div class="hover-description">
+                    <p>Minecraft is a sandbox game that lets you build, explore, and survive in a blocky 3D world. Endless opportunities for creativity and fun.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Minecraft</h3>
+                <p class="game-genre">Sandbox, Adventure</p>
+                <p><strong>Release Date:</strong> November 18, 2011</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i5, RAM: 8GB, Storage: 4GB</p>
+                <p class="price"><span class="discounted-price">$19.99</span> <span class="original-price">$29.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 4 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/FC25.jpg" alt="FC 25">
+                <div class="hover-description">
+                    <p>FC 25 is an epic RPG where you embark on a heroic journey across vast, mystical lands filled with battles and exploration.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>FC 25</h3>
+                <p class="game-genre">RPG, Fantasy</p>
+                <p><strong>Release Date:</strong> November 5, 2022</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i5, RAM: 8GB, Storage: 30GB</p>
+                <p class="price"><span class="discounted-price">$34.99</span> <span class="original-price">$69.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 5 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/cyberpunk 2077.jpg" alt="Cyberpunk 2077">
+                <div class="hover-description">
+                    <p>Dive into the futuristic open world of Night City in Cyberpunk 2077, where you play as V, a customizable mercenary.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Cyberpunk 2077</h3>
+                <p class="game-genre">RPG, Sci-Fi</p>
+                <p><strong>Release Date:</strong> December 10, 2020</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i7, RAM: 16GB, Storage: 70GB</p>
+                <p class="price"><span class="discounted-price">$39.99</span> <span class="original-price">$59.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 6 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/Fortnite.jpeg" alt="Fortnite">
+                <div class="hover-description">
+                    <p>Fortnite is a free-to-play battle royale game where players gather resources, build structures, and compete to be the last one standing.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Fortnite</h3>
+                <p class="game-genre">Strategy, Simulation</p>
+                <p><strong>Release Date:</strong> July 25, 2017</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i3, RAM: 4GB, Storage: 20GB</p>
+                <p class="price"><span class="discounted-price">$0.00</span> <span class="original-price">$0.00</span></p>
+                <button class="buy-now-button">Play Now</button>
+            </div>
+        </div>
+
+        <!-- Game 7 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./store2/GTAV.jpg" alt="Grand Theft Auto V">
+                <div class="hover-description">
+                    <p>Grand Theft Auto V is a sprawling open-world game filled with action, heists, and a rich narrative experience in Los Santos.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Grand Theft Auto V</h3>
+                <p class="game-genre">Action, Open-World</p>
+                <p><strong>Release Date:</strong> September 17, 2013</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i5, RAM: 8GB, Storage: 65GB</p>
+                <p class="price"><span class="discounted-price">$14.99</span> <span class="original-price">$29.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 8 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/Forza-Horizon-4-.jpg" alt="Forza Horizon 4">
+                <div class="hover-description">
+                    <p>Forza Horizon 4 is an open-world racing game set in the UK, offering dynamic seasons and a massive collection of cars.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Forza Horizon 4</h3>
+                <p class="game-genre">Racing, Simulation</p>
+                <p><strong>Release Date:</strong> October 2, 2018</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i5, RAM: 8GB, Storage: 80GB</p>
+                <p class="price"><span class="discounted-price">$19.99</span> <span class="original-price">$39.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 9 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/fifa23.jpg" alt="FIFA 23">
+                <div class="hover-description">
+                    <p>FIFA 23 delivers the most realistic football simulation with stunning graphics, gameplay improvements, and authentic teams.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>FIFA 23</h3>
+                <p class="game-genre">Sports, Simulation</p>
+                <p><strong>Release Date:</strong> September 30, 2022</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i7, RAM: 16GB, Storage: 50GB</p>
+                <p class="price"><span class="discounted-price">$39.99</span> <span class="original-price">$59.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+        <!-- Game 10 -->
+        <div class="game-item">
+            <div class="game-image-container">
+                <img src="./Store/Elden ring.jpg" alt="Elden Ring">
+                <div class="hover-description">
+                    <p>Elden Ring offers a dark fantasy RPG experience with vast open-world exploration, challenging battles, and epic storytelling.</p>
+                </div>
+            </div>
+            <div class="game-info">
+                <h3>Elden Ring</h3>
+                <p class="game-genre">Action, RPG</p>
+                <p><strong>Release Date:</strong> February 25, 2022</p>
+                <p><strong>System Requirements:</strong><br>OS: Windows 10, CPU: Intel i7, RAM: 12GB, Storage: 60GB</p>
+                <p class="price"><span class="discounted-price">$49.99</span> <span class="original-price">$69.99</span></p>
+                <button class="buy-now-button">Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-- Footer Section -->
+     <footer class="advanced-footer">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="./index.html"> <!-- Link to homepage -->
+                    <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                </a>
+                <h1><span class="titan">TITAN</span> GAMING</h1>
+                <p>Where gamers unite and conquer!</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="faq.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                </ul>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Middle Section -->
+        <div class="footer-middle">
+            <div class="features">
+                <h3>Why Titan Gaming?</h3>
+                <ul>
+                    <li>Exclusive Game Releases</li>
+                    <li>Top Leaderboards</li>
+                    <li>Weekly Gaming Events</li>
+                    <li>24/7 Support for Gamers</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

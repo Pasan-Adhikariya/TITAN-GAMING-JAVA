@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/consoles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+
+<!-- Hero Section with Video Background -->
+<section class="hero-section">
+    <div class="video-background">
+      <video autoplay muted loop playsinline>
+        <source src="videos/consoles/Untitled video - Made with Clipchamp.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title"></h1>
+      <p class="hero-description">
+        Dive into a world of adventure with the latest consoles, thrilling games, and cutting-edge accessories. Your journey starts here!
+      </p>
+      <button class="cta-button">Explore Now</button>
+    </div>
+  </section>
+  
+  <!-- CONSOLE INTRODUCTION SECTION (DESCRIPTION ONLY) -->
+<section class="console-intro-section">
+    <div class="intro-container">
+      <h2 class="intro-title">Explore Our Collection</h2>
+      <p class="intro-description">
+        We offer top-of-the-line gaming consoles and high-performance peripherals to match your unique style and play. From immersive sound to precision controls — our curated collection meets every gamer's dream setup.
+      </p>
+    </div>
+  </section>
+  
+  <!-- CONSOLE PRODUCTS GRID -->
+  <div class="consoles-grid">
+    <!-- Console 1 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/ps5.png" alt="PlayStation 5" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">PlayStation 5</h3>
+        <p class="console-description">Get your hands on the latest version of PlayStation with stunning graphics and exclusive games!</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-count">4.5/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 2 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/x box x.jpg" alt="Xbox Series X" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Xbox Series X</h3>
+        <p class="console-description">The ultimate gaming machine with 4K resolution and backward compatibility with previous Xbox games.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 3 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/nintendo switch.jpg" alt="Nintendo Switch" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Nintendo Switch</h3>
+        <p class="console-description">The versatile hybrid console that you can play at home or on the go!</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-count">4.3/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 4 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/ps4-pro.webp" alt="PlayStation 4 Pro" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">PlayStation 4 Pro</h3>
+        <p class="console-description">A powerful gaming console for enhanced gameplay with 4K streaming and gaming support.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-count">4.6/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 5 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/xbox-one-x.webp" alt="Xbox One X" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Xbox One X</h3>
+        <p class="console-description">Experience the true power of 4K gaming with Xbox One X’s premium performance.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 6 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/nintendo-switch-lite-.jpg" alt="Nintendo Switch Lite" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Nintendo Switch Lite</h3>
+        <p class="console-description">A lighter, more portable version of the Nintendo Switch, perfect for on-the-go gaming.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <span class="rating-count">4.0/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 7 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/ps5 digital.webp" alt="PlayStation 5 Digital Edition" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">PlayStation 5 Digital Edition</h3>
+        <p class="console-description">The digital-only version of PS5 offering fast loading and stunning 4K visuals.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 8 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/xbox-series-s-white-.webp" alt="Xbox Series S" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Xbox Series S</h3>
+        <p class="console-description">The affordable next-gen Xbox console with fast load times and stunning graphics in a compact design.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <span class="rating-count">4.2/5</span>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Console 9 -->
+    <div class="console-item">
+      <div class="console-image">
+        <img src="consoles/alienware-aurora-r12.webp" alt="Alienware Aurora R12 Gaming PC" class="img-fluid">
+      </div>
+      <div class="console-details">
+        <h3 class="console-name">Alienware Aurora R12 Gaming PC</h3>
+        <p class="console-description">A powerful gaming PC with unmatched performance and incredible graphical capabilities.</p>
+        <div class="console-rating">
+          <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<section class="consoles-grid-section">
+    <div class="section-header">
+        <h2 class="section-title">Buy now</h2>
+        <p class="section-description">
+             Find your perfect match and elevate your gaming experience. Filter by category or price.
+        </p>
+
+
+    <div class="consoles-grid">
+        <!-- Console 1: PlayStation 5 -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/ps5.png" alt="PlayStation 5" class="img-fluid">
+                <div class="console-price">$499</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">PlayStation 5</h3>
+                <ul class="console-specs">
+                    <li>Processor: AMD Zen 2</li>
+                    <li>Memory: 16 GB GDDR6</li>
+                    <li>Storage: 825 GB SSD</li>
+                    <li>Graphics: AMD Radeon Navi</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-count">4.5/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 2: Xbox Series X -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/x box x.jpg" alt="Xbox Series X" class="img-fluid">
+                <div class="console-price">$499</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">Xbox Series X</h3>
+                <ul class="console-specs">
+                    <li>Processor: AMD Zen 2</li>
+                    <li>Memory: 16 GB GDDR6</li>
+                    <li>Storage: 1 TB SSD</li>
+                    <li>Graphics: AMD Radeon Navi</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 3: Nintendo Switch -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/nintendo switch.jpg" alt="Nintendo Switch" class="img-fluid">
+                <div class="console-price">$299</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">Nintendo Switch</h3>
+                <ul class="console-specs">
+                    <li>Processor: NVIDIA Tegra X1</li>
+                    <li>Memory: 4 GB RAM</li>
+                    <li>Storage: 32 GB</li>
+                    <li>Graphics: NVIDIA Maxwell</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-count">4.3/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 4: PlayStation 4 Pro -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/ps4-pro.webp" alt="PlayStation 4 Pro" class="img-fluid">
+                <div class="console-price">$399</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">PlayStation 4 Pro</h3>
+                <ul class="console-specs">
+                    <li>Processor: x86-64 AMD Jaguar</li>
+                    <li>Memory: 8 GB GDDR5</li>
+                    <li>Storage: 1 TB</li>
+                    <li>Graphics: AMD Radeon Polaris</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9734;</span> <span class="rating-count">4.6/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 5: Xbox One X -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/xbox-one-x.webp" alt="Xbox One X" class="img-fluid">
+                <div class="console-price">$399</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">Xbox One X</h3>
+                <ul class="console-specs">
+                    <li>Processor: x86-64 AMD Jaguar</li>
+                    <li>Memory: 12 GB GDDR5</li>
+                    <li>Storage: 1 TB</li>
+                    <li>Graphics: AMD Radeon Polaris</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 6: Nintendo Switch Lite -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/nintendo-switch-lite-.jpg" alt="Nintendo Switch Lite" class="img-fluid">
+                <div class="console-price">$199</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">Nintendo Switch Lite</h3>
+                <ul class="console-specs">
+                    <li>Processor: NVIDIA Tegra X1</li>
+                    <li>Memory: 4 GB RAM</li>
+                    <li>Storage: 32 GB</li>
+                    <li>Graphics: NVIDIA Maxwell</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <span class="rating-count">4.0/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 7: PlayStation 5 Digital Edition -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/ps5 digital.webp" alt="PlayStation 5 Digital Edition" class="img-fluid">
+                <div class="console-price">$399</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">PlayStation 5 Digital Edition</h3>
+                <ul class="console-specs">
+                    <li>Processor: AMD Zen 2</li>
+                    <li>Memory: 16 GB GDDR6</li>
+                    <li>Storage: 825 GB SSD</li>
+                    <li>Graphics: AMD Radeon Navi</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <span class="rating-count">5/5</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Console 8: Xbox Series S -->
+        <div class="console-item">
+            <div class="console-image">
+                <img src="consoles/xbox-series-s-white-.webp" alt="Xbox Series S" class="img-fluid">
+                <div class="console-price">$299</div>
+                <div class="console-hover">
+                    <button class="view-details">Buy Now</button>
+                </div>
+            </div>
+            <div class="console-details">
+                <h3 class="console-name">Xbox Series S</h3>
+                <ul class="console-specs">
+                    <li>Processor: AMD Zen 2</li>
+                    <li>Memory: 10 GB GDDR6</li>
+                    <li>Storage: 512 GB SSD</li>
+                    <li>Graphics: AMD Radeon Navi</li>
+                </ul>
+                <div class="console-rating">
+                    <span class="rating-stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span> <span class="rating-count">4.0/5</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <!-- Footer Section -->
+  <footer class="advanced-footer">
+    <!-- Footer Top Section -->
+    <div class="footer-top">
+        <div class="footer-brand">
+            <a href="./index.html"> <!-- Link to homepage -->
+                <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+            </a>
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+            <p>Where gamers unite and conquer!</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-navigation">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h3>Stay Connected</h3>
+            <ul>
+                <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+            </ul>
+        </div>
+    
+        <!-- Newsletter Section -->
+        <div class="footer-newsletter">
+            <h3>Join Our Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Middle Section -->
+    <div class="footer-middle">
+        <div class="features">
+            <h3>Why Titan Gaming?</h3>
+            <ul>
+                <li>Exclusive Game Releases</li>
+                <li>Top Leaderboards</li>
+                <li>Weekly Gaming Events</li>
+                <li>24/7 Support for Gamers</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+        <ul class="legal-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+    
+</body>
+</html>

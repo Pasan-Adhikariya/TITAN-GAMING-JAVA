@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/upcomming.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+
+  <header class="gaming-header">
+    <!-- Logo Section -->
+    <div class="logo">
+      <a href="index.html" class="logo-link" aria-label="Go to Home">
+        <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+        <h1><span class="titan">TITAN</span> GAMING</h1>
+      </a>
+    </div>
+  
+    <!-- Hamburger Menu for Mobile -->
+    <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar" aria-label="Main Navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+  
+        <li class="dropdown">
+          <a href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a href="about.html#our-mission">Our Mission</a></li>
+            <li><a href="about.html#our-services">Our Services</a></li>
+            <li><a href="about.html#our-stores">Our Stores</a></li>
+            <li><a href="about.html#our-team">Our Team</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="games.html">Games</a></li>
+        <li><a href="components.html">Components</a></li>
+  
+        <li class="dropdown">
+          <a href="#">Accessories</a>
+          <ul class="dropdown-menu">
+            <li><a href="consoles.html">Consoles</a></li>
+            <li><a href="peripharals.html">Peripharals</a></li>
+          </ul>
+        </li>
+  
+        <li><a href="upcoming.html">Upcoming</a></li>
+        <li><a href="faq.html">FAQ & Forums</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Search Bar -->
+    <div class="search-box">
+      <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+      <button class="search-btn" aria-label="Submit search">Search</button>
+    </div>
+    <script>
+        const hamburger = document.getElementById("hamburger-menu");
+        const navbar = document.getElementById("navbar");
+      
+        hamburger.addEventListener("click", () => {
+          const expanded = hamburger.getAttribute("aria-expanded") === "true";
+          hamburger.setAttribute("aria-expanded", !expanded);
+          hamburger.classList.toggle("active");
+          navbar.classList.toggle("active");
+        });
+      </script>
+      
+  </header>
+
+
+
+  
+
+
+<!-- Upcoming Games Section -->
+<section id="upcoming-games">
+  <header class="section-header">
+    <h1>Upcoming Games</h1>
+    <p>
+      Stay ahead in the world of gaming! Explore our lineup of highly anticipated titles, each carefully curated to ensure an unforgettable experience. Check out the release dates, platforms, and genres for your favorite upcoming games.
+    </p>
+  </header>
+
+  <div class="games-grid">
+    <!-- Game Card 1: GTA 6 -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/gta VI.jpg" alt="GTA 6" loading="lazy">
+        <figcaption>
+          <h3>GTA 6</h3>
+          <p class="genre">Genre: Action-Adventure</p>
+          <p class="platforms">Platforms: PC, PS5, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: October 25, 2025</p>
+        <p class="description">The iconic open-world series returns with an expanded map, enhanced graphics, and a gripping storyline set in Vice City.</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 2: -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/Sniper elite.jpg" alt="Sniper Elite" loading="lazy">
+        <figcaption>
+          <h3>Sniper Elite Resistance</h3>
+          <p class="genre">Genere:Shooter Video Game, Adventure game, Adventure</p>
+          <p class="platforms">Platforms: PC, Xbox</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: January 28, 2025</p>
+        <p class="description"> upcoming third-person tactical shooter video game to be published by Rebellion Developments. As a continuation of the Sniper Elite series.</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 3: -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/Civilization VII.jpg" alt="Civilization VII" loading="lazy">
+        <figcaption>
+          <h3>Civilization VII</h3>
+          <p class="genre">Genre: Sci-Fi RPG</p>
+          <p class="platforms">Platforms: PC, PS5, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: December 15, 2025</p>
+        <p class="description">Sid Meier's Civilization VII is an upcoming 4X turn-based strategy video game developed by Firaxis Games and published by 2K.</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 4:  -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/Assasin's creed shadows.jpg" alt="AC Shadows" loading="lazy">
+        <figcaption>
+          <h3>Assassin Creed Shadows</h3>
+          <p class="genre">Genre: Action RPG</p>
+          <p class="platforms">Platforms: PC, PS5, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: February 10, 2026</p>
+        <p class="description">Set in the late Sengoku period of feudal Japan, Assassin's Creed Shadows features two playable protagonists ...</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 5:  -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/Kindom come.jpg" alt="KINGDOM COME" loading="lazy">
+        <figcaption>
+          <h3>KINGDOM COME</h3>
+          <p class="genre">Genre: Open-World RPG</p>
+          <p class="platforms">Platforms: PC, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: December 1, 2026</p>
+        <p class="description">Deliverance II is an upcoming action role-playing game developed by Warhorse Studios and published by Deep Silver. </p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 6: -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/Hades-2.jpg" alt="Hades 2" loading="lazy">
+        <figcaption>
+          <h3>Hades-2</h3>
+          <p class="genre">Fantasy RPG</p>
+          <p class="platforms">Platforms: PC, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: July 15, 2026</p>
+        <p class="description">roguelike action role-playing game video game developed and published by Supergiant Games, serving as a sequel to Hades.</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 7:  -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/Monster hunter.jpeg" alt="Monster Hunter" loading="lazy">
+        <figcaption>
+          <h3>Monster Hunter</h3>
+          <p class="genre">Genre: First-Person RPG</p>
+          <p class="platforms">Platforms: PC, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: March 20, 2026</p>
+        <p class="description">Enjoy the ultimate hunting experience, using everything at your disposal to hunt monsters in a new world teeming with surprises and excitement.</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Game Card 7:  -->
+    <article class="game-card">
+      <figure>
+        <img src="Upcoming games/marvels-blade.jpg" alt="Avowed" loading="lazy">
+        <figcaption>
+          <h3>Marvels Blade</h3>
+          <p class="genre">Genre: First-Person RPG</p>
+          <p class="platforms">Platforms: PC, Xbox Series X</p>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Release Date: March 20, 2026</p>
+        <p class="description">Marvel's Blade is an upcoming action-adventure game developed by Arkane Studios and published by Bethesda Softworks</p>
+        <button class="pre-order-btn">Pre-Order Now</button>
+      </div>
+    </article>
+
+    <!-- Placeholder for More Games -->
+    <article class="game-card placeholder">
+      <figure>
+       
+        <figcaption>
+          <h3>More Games Coming Soon</h3>
+        </figcaption>
+      </figure>
+      <div class="game-hover">
+        <p>Stay tuned for more updates on the hottest upcoming titles!</p>
+      </div>
+    </article>
+  </div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<!-- Featured Reviews Section -->
+<section id="featured-reviews">
+  <header class="section-header">
+    <h1>Featured Reviews</h1>
+    <p>
+      Explore what gamers and critics are saying about the latest releases. Dive into detailed reviews, ratings, and trends to guide your next adventure.
+    </p>
+  </header>
+  <div class="reviews-grid">
+    <article class="review-card">
+      <header class="review-header">
+        <img src="our team/chamath.jpg" alt="Reviewer 3" class="reviewer-avatar">
+        <div class="reviewer-details">
+          <h3>chamath</h3>
+          <p class="review-date">Reviewed on January 18, 2025</p>
+        </div>
+      </header>
+      <blockquote class="review-content">
+        <p>"This game is a masterpiece! The story, visuals, and gameplay blend seamlessly to deliver an unforgettable experience. Highly recommended!"</p>
+      </blockquote>
+      <footer class="review-footer">
+        <div class="rating">
+          <span>Rating:</span>
+          <span class="stars">★★★★★</span>
+        </div>
+        <div class="review-actions">
+          <button class="report-btn">Comment</button>
+        </div>
+      </footer>
+    </article>
+
+    <!-- Review Card 2 -->
+    <article class="review-card">
+      <header class="review-header">
+        <img src="our team/chamath.jpg" alt="Reviewer 3" class="reviewer-avatar">
+        <div class="reviewer-details">
+          <h3>chamath</h3>
+          <p class="review-date">Reviewed on January 18, 2025</p>
+        </div>
+      </header>
+      <blockquote class="review-content">
+        <p>"While the graphics are stunning, the gameplay feels repetitive after a few hours. Worth a try, but manage your expectations."</p>
+      </blockquote>
+      <footer class="review-footer">
+        <div class="rating">
+          <span>Rating:</span>
+          <span class="stars">★★★☆☆</span>
+        </div>
+        <div class="review-actions">
+          <button class="report-btn">Comment</button>
+        </div>
+      </footer>
+    </article>
+
+    <!-- Review Card 3 -->
+    <article class="review-card">
+      <header class="review-header">
+        <img src="our team/chamath.jpg" alt="Reviewer 3" class="reviewer-avatar">
+        <div class="reviewer-details">
+          <h3>chamath</h3>
+          <p class="review-date">Reviewed on January 18, 2025</p>
+        </div>
+      </header>
+      <blockquote class="review-content">
+        <p>"This title redefines co-op play with innovative mechanics. Grab a friend and dive in—it's pure fun!"</p>
+      </blockquote>
+      <footer class="review-footer">
+        <div class="rating">
+          <span>Rating:</span>
+          <span class="stars">★★★★☆</span>
+        </div>
+        <div class="review-actions">
+          <button class="report-btn">Comment</button>
+        </div>
+      </footer>
+    </article>
+
+    <!-- Placeholder for More Reviews -->
+    <article class="review-card placeholder">
+      <p>More reviews coming soon! Stay tuned for the latest insights from our gaming community.</p>
+    </article>
+  </div>
+  <hr class="section-divider">
+
+  <footer class="section-footer">
+  </footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="advanced-footer">
+    <!-- Footer Top Section -->
+    <div class="footer-top">
+        <div class="footer-brand">
+            <a href="./index.html"> <!-- Link to homepage -->
+                <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+            </a>
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+            <p>Where gamers unite and conquer!</p>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="footer-navigation">
+            <h3>Explore</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="games.html">Games</a></li>
+                <li><a href="faq.html">Contact</a></li>
+            </ul>
+        </div>
+    
+        <!-- Social Media Section -->
+        <div class="footer-social">
+            <h3>Stay Connected</h3>
+            <ul>
+                <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+            </ul>
+        </div>
+    
+        <!-- Newsletter Section -->
+        <div class="footer-newsletter">
+            <h3>Join Our Newsletter</h3>
+            <form action="#" method="post">
+                <input type="email" placeholder="Enter your email" aria-label="Email address">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Middle Section -->
+    <div class="footer-middle">
+        <div class="features">
+            <h3>Why Titan Gaming?</h3>
+            <ul>
+                <li>Exclusive Game Releases</li>
+                <li>Top Leaderboards</li>
+                <li>Weekly Gaming Events</li>
+                <li>24/7 Support for Gamers</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+        <ul class="legal-links">
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Use</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+        </ul>
+    </div>
+</footer>
+
+    
+</body>
+</html>

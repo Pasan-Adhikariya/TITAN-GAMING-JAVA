@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TITAN GAMING</title>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="icon" href="./logo/Downpic.cc-2051292272-removebg-preview.png" type="image/png">
+    <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#00ffff">
+
+</head>
+<body>
+    <header class="gaming-header">
+        <!-- Logo Section -->
+        <div class="logo">
+          <a href="index.html" class="logo-link" aria-label="Go to Home">
+            <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="TITAN GAMING Logo" class="logo-img" />
+            <h1><span class="titan">TITAN</span> GAMING</h1>
+          </a>
+        </div>
+      
+        <!-- Hamburger Menu for Mobile -->
+        <button class="hamburger-menu" id="hamburger-menu" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      
+        <!-- Navigation Menu -->
+        <nav class="navbar" id="navbar" aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+      
+            <li class="dropdown">
+              <a href="about.html">About</a>
+              <ul class="dropdown-menu">
+                <li><a href="about.html#our-mission">Our Mission</a></li>
+                <li><a href="about.html#our-services">Our Services</a></li>
+                <li><a href="about.html#our-stores">Our Stores</a></li>
+                <li><a href="about.html#our-team">Our Team</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="games.html">Games</a></li>
+            <li><a href="components.html">Components</a></li>
+      
+            <li class="dropdown">
+              <a href="#">Accessories</a>
+              <ul class="dropdown-menu">
+                <li><a href="consoles.html">Consoles</a></li>
+                <li><a href="peripharals.html">Peripharals</a></li>
+              </ul>
+            </li>
+      
+            <li><a href="upcoming.html">Upcoming</a></li>
+            <li><a href="faq.html">FAQ & Forums</a></li>
+          </ul>
+        </nav>
+      
+        <!-- Search Bar -->
+        <div class="search-box">
+          <input type="text" class="search-input" placeholder="Search..." aria-label="Search this site" />
+          <button class="search-btn" aria-label="Submit search">Search</button>
+        </div>
+        <script>
+            const hamburger = document.getElementById("hamburger-menu");
+            const navbar = document.getElementById("navbar");
+          
+            hamburger.addEventListener("click", () => {
+              const expanded = hamburger.getAttribute("aria-expanded") === "true";
+              hamburger.setAttribute("aria-expanded", !expanded);
+              hamburger.classList.toggle("active");
+              navbar.classList.toggle("active");
+            });
+          </script>
+          
+      </header>
+
+
+
+
+
+<!-- Welcome Message Section with Image Slideshow -->
+<section class="welcome-message">
+    <div class="slideshow-container">
+        <!-- Slideshow Images -->
+        <div class="mySlides fade">
+            <img src="./videos/home/./The-image-showcases-the-Ninja-Turtles-emerging-from-shadows-with-glowing-eyes-and-weapons-at-the-ready-.jpg" alt="Slide 1" class="slide-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="./videos/home/peakpx.jpg" alt="Slide 2" class="slide-image">
+        </div>
+        <div class="mySlides fade">
+            <img src="./videos/home/wallpaperflare.com_wallpaper.jpg" alt="Slide 3" class="slide-image">
+        </div>
+    </div>
+    <div class="container">
+        <!-- Neon Effect Box -->
+        <div class="neon-box">
+            <!-- Main Heading (Welcome Message) -->
+            <h1>Welcome to Titan Gaming!</h1>
+            
+            <!-- Subheading / Description Text -->
+            <p>Unleash your inner gamer and embark on epic adventures. We offer the best gaming experience with top-rated titles, a vibrant community, and endless fun!</p>
+            
+            <!-- Call to Action Button -->
+            <a href="./about.html" class="cta-button">About us</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- Store Introduction Section -->
+<section class="store-introduction" id="store-introduction">
+    <div class="container">
+        <div class="intro-content">
+            <h2>About Titan Gaming</h2>
+            <p>Welcome to Titan Gaming, your ultimate destination for everything gaming! We are a passionate community of gamers who bring you the latest and most exciting titles, exclusive deals, and a thrilling gaming experience. Whether you are a casual player or a competitive gamer, we have something for everyone.</p>
+            <p>Join us as we build an ever-growing library of games, and dive into unforgettable adventures. Explore our wide range of games, discover amazing deals, and connect with like-minded players from around the world!</p>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Deals and Discounts Section -->
+<section class="deals-discounts">
+    <div class="section-title">
+        <h2>Special Deals & Discounts</h2>
+            <p>Catch the best deals on your favorite games! Limited time offers.</p>
+        </div>
+        <div class="deals-list">
+            <div class="deal-item">
+                <img src="./store2/witcher%203.jpg" alt="The Witcher 3: Wild Hunt">
+                <h3>The Witcher 3: Wild Hunt</h3>
+                <p class="original-price">$59.99</p>
+                <p class="discounted-price">$39.99</p>
+                <a href="./games.html" class="buy-now">Buy Now</a>
+            </div>
+            <div class="deal-item">
+                <img src="./store2/red%20dead%202.jpg" alt="Red Dead Redemption 2">
+                <h3>Red Dead Redemption 2</h3>
+                <p class="original-price">$69.99</p>
+                <p class="discounted-price">$49.99</p>
+                <a href="./games.html" class="buy-now">Buy Now</a>
+            </div>
+            <div class="deal-item">
+                <img src="./store/cyberpunk%202077.jpg" alt="Cyberpunk 2077">
+                <h3>Cyberpunk 2077</h3>
+                <p class="original-price">$59.99</p>
+                <p class="discounted-price">$34.99</p>
+                <a href="./games.html" class="buy-now">Buy Now</a>
+            </div>
+            <div class="deal-item">
+            <img src="./Store/assassins-creed-valhalla-eivor-viking-raider-pc-games-3840x2160-546.jpg" alt="Assassin's Creed Valhalla">
+            <h3>Assassin's Creed Valhalla</h3>
+            <p class="original-price">$59.99</p>
+            <p class="discounted-price">$44.99</p>
+            <a href="./games.html" class="buy-now">Buy Now</a>
+        </div>
+        <div class="deal-item">
+            <img src="./store2/ghost-of-tsushima-4320x3456-12072.jpg" alt="Ghost of Tsushima">
+            <h3>Ghost of Tsushima</h3>
+            <p class="original-price">$49.99</p>
+            <p class="discounted-price">$39.99</p>
+            <a href="./games.html" class="buy-now">Buy Now</a>
+        </div>
+        <div class="deal-item">
+            <img src="./store2/horizon-zero-dawn-3840x2160-19062.jpg" alt="Horizon Zero Dawn">
+            <h3>Horizon Zero Dawn</h3>
+            <p class="original-price">$39.99</p>
+            <p class="discounted-price">$24.99</p>
+            <a href="./games.html" class="buy-now">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- See More Button -->
+    <div class="see-more">
+        <a href="games.html" class="explore-button">See More</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+<!-- Events Section -->
+<section class="events-section" id="events-section">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="section-title">
+            <h2>Explore Our Creative Events</h2>
+            <p>Join us for unique and thrilling activities that showcase the best in gaming and creativity.</p>
+        </div>
+
+        <!-- Events List -->
+        <div class="events-list">
+            <!-- Event 1 -->
+            <div class="event-item">
+                <h3>Virtual Reality Adventure</h3>
+                <p>Step into a new dimension with our VR Adventure. Compete in an exciting maze and solve challenges to win prizes!</p>
+                <!-- Bullet Point List -->
+                <ul>
+                    <li><strong>When:</strong> February 20, 2025</li>
+                    <li><strong>Where:</strong> Titan Gaming HQ</li>
+                    <li><strong>Highlights:</strong> Multiplayer challenges, prizes, and free trials.</li>
+                </ul>
+            </div>
+
+            <!-- Event 2 -->
+            <div class="event-item">
+                <h3>Esports Battle Royale</h3>
+                <p>Showcase your gaming skills and battle it out with the best players in this high-stakes tournament!</p>
+                <!-- Numbered List -->
+                <ol>
+                    <li>Register before March 1, 2025.</li>
+                    <li>Participate in preliminary online rounds.</li>
+                    <li>Final showdown at Titan Gaming HQ.</li>
+                </ol>
+            </div>
+
+            <!-- Event 3 -->
+            <div class="event-item">
+                <h3>Indie Game Showcase</h3>
+                <p>Discover the latest indie games and meet the creators behind them. Participate in interactive sessions and enjoy sneak peeks.</p>
+                <!-- Bullet Point List -->
+                <ul>
+                    <li>Exclusive demos of unreleased games.</li>
+                    <li>Networking opportunities with developers.</li>
+                    <li>Panel discussions about indie game development.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- See More Button -->
+        <div class="see-more-button">
+            <a href="community.html" class="cta-button">See More Events</a>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+   <!-- Hero Section -->
+   <div class="featured-games">
+    <div class="section-title">
+        <h2>Featured Games</h2>
+        <p>Explore our collection of amazing games that you will love.</p>
+    </div>
+
+    <div class="game-list">
+        <!-- Game Items go here -->
+        <div class="game-item">
+            <img src="./Featured/Black Myth Wukong/black-myth-wukong-3840x2160-17948.jpeg" alt="Game 1">
+            <h3>Black Myth Wukong</h3>
+            <p>Action role-playing game</p>
+            <a href="./games.html">Buy Now</a>
+        </div>
+        <div class="game-item">
+            <img src="./Featured/Delta Force 2024/Delta-Force-Ann_08-18-23.jpg" alt="Game 2">
+            <h3>Delta Force: Hawk Ops</h3>
+            <p>First-person tactical shooter</p>
+            <a href="./games.html">Buy Now</a>
+        </div>
+        <div class="game-item">
+            <img src="./Featured/Counter Strike 2/fqzn5pcq7xpa1.jpg" alt="Game 3">
+            <h3>Counter-Strike 2</h3>
+            <p>First-person shooter game</p>
+            <a href="./games.html">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- Explore Button -->
+    <div class="explore-container">
+        <a href="#" class="explore-button">Explore More Games</a>
+    </div>
+</div>
+
+
+    
+    
+    
+
+
+
+
+
+
+<!-- Trending Games Section -->
+<section class="trending-games" id="trending-games">
+    <div class="section-title">
+        <h2>Trending Games</h2>
+        <p>Stay ahead with the hottest games everyone is talking about!</p>
+    </div>
+    <div class="game-list">
+        <div class="game-item">
+            <img src="./Trending Games/Elden Ring/wop7hg2ozh471.png" alt="Elden Ring">
+            <h3>Elden Ring</h3>
+            <p>Open-world action RPG</p>
+            <a href="./games.html">Buy Now</a>
+        </div>
+        <div class="game-item">
+            <img src="./Trending Games/Starfield/more-4k-8k-starfield-wallpapers-link-in-comments-v0-utcrxf0hufjb1.webp" alt="Starfield">
+            <h3>Starfield</h3>
+            <p>Epic space exploration adventure</p>
+            <a href="./games.html">Buy Now</a>
+        </div>
+        <div class="game-item">
+            <img src="./Trending Games/Spider man 2/marvels-spider-man-3840x2160-11609.jpeg" alt="Spider-Man 2">
+            <h3>Spider-Man 2</h3>
+            <p>Action-packed superhero game</p>
+            <a href="./games.html">Buy Now</a>
+        </div>
+    </div>
+
+    <!-- See More Button -->
+    <div class="see-more">
+        <a href="games.html" class="explore-button">See More</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+<!-- Newsletter Section -->
+<section class="newsletter" id="newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Subscribe to Our Newsletter</h2>
+            <p>Stay updated with the latest games, deals, and community events. Subscribe to receive exclusive offers directly in your inbox!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- Footer Section -->
+    <footer class="advanced-footer">
+        <!-- Footer Top Section -->
+        <div class="footer-top">
+            <div class="footer-brand">
+                <a href="./index.html"> <!-- Link to homepage -->
+                    <img src="./logo/Downpic.cc-2051292272-removebg-preview.png" alt="Titan Gaming Logo" class="footer-logo">
+                </a>
+                <h1><span class="titan">TITAN</span> GAMING</h1>
+                <p>Where gamers unite and conquer!</p>
+            </div>
+    
+            <!-- Navigation Links -->
+            <div class="footer-navigation">
+                <h3>Explore</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="faq.html">Contact</a></li>
+                </ul>
+            </div>
+        
+            <!-- Social Media Section -->
+            <div class="footer-social">
+                <h3>Stay Connected</h3>
+                <ul>
+                    <li><a href="#" aria-label="Follow us on Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Follow us on Twitter">Twitter</a></li>
+                    <li><a href="#" aria-label="Follow us on Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="Subscribe to our YouTube channel">YouTube</a></li>
+                </ul>
+            </div>
+        
+            <!-- Newsletter Section -->
+            <div class="footer-newsletter">
+                <h3>Join Our Newsletter</h3>
+                <form action="#" method="post">
+                    <input type="email" placeholder="Enter your email" aria-label="Email address">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        
+        <!-- Middle Section -->
+        <div class="footer-middle">
+            <div class="features">
+                <h3>Why Titan Gaming?</h3>
+                <ul>
+                    <li>Exclusive Game Releases</li>
+                    <li>Top Leaderboards</li>
+                    <li>Weekly Gaming Events</li>
+                    <li>24/7 Support for Gamers</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Bottom Section -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Titan Gaming. All Rights Reserved.</p>
+            <ul class="legal-links">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,888 @@
+/* Store Introduction Section */
+.store-introduction {
+    padding: 60px 20px;
+    background: #111;
+    color: #fff;
+    text-align: center;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Initially translated down */
+    animation: slide-up 1s forwards; /* Trigger animation */
+    animation-delay: 0.3s; /* Delay before starting the animation */
+}
+
+/* Slide-up keyframes */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Store Introduction Section on Scroll */
+.store-introduction.is-visible {
+    opacity: 1;
+    transform: translateY(0); /* Slide into position */
+}
+
+/* Styling for text */
+.store-introduction .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.store-introduction .intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.store-introduction h2 {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+}
+
+.store-introduction p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .store-introduction h2 {
+        font-size: 2rem;
+    }
+
+    .store-introduction p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .store-introduction h2 {
+        font-size: 1.8rem;
+    }
+
+    .store-introduction p {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+/* General Reset and Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Deals and Discounts Section */
+.deals-discounts {
+    align-content: center;
+    width: 100%;
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0a0a0a, #000); /* Dark gradient background */
+    color: #fff;
+}
+
+.deals-discounts .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.deals-discounts .section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00bcd4; /* Neon Blue */
+}
+
+.deals-discounts .section-title p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.deals-discounts .deals-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.deals-discounts .deal-item {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+}
+
+.deals-discounts .deal-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.7); /* Enhanced Glow */
+}
+
+.deals-discounts .deal-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.deals-discounts .deal-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on image */
+}
+
+.deals-discounts .deal-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #fff; /* White color for game names */
+}
+
+.deals-discounts .deal-item p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.deals-discounts .deal-item a {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+.deals-discounts .deal-item a:hover {
+    background: #008ba3;
+    box-shadow: 0 0 20px #00bcd4;
+}
+
+/* Price Styles */
+.deals-discounts .deal-item .original-price {
+    color: #888; /* Lighter grey for original price */
+    text-decoration: line-through; /* Strike-through effect for the original price */
+    margin-right: 10px;
+}
+
+.deals-discounts .deal-item .discounted-price {
+    color: #00bcd4; /* Neon Blue for the discounted price */
+    font-weight: bold;
+}
+
+/* See More Button */
+.see-more {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.see-more .explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00bcd4; /* Neon Blue */
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 188, 212, 0.3); /* Reduced glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: neon-btn-hover 3s infinite alternate;
+}
+
+.see-more .explore-button:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    background-color: #008ba3; /* Darker Neon Blue */
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.6); /* Stronger glow on hover */
+}
+
+/* Keyframes for Animations */
+@keyframes neon-btn-hover {
+    0% {
+        box-shadow: 0 5px 10px rgba(0, 188, 212, 0.3);
+    }
+    100% {
+        box-shadow: 0 10px 20px rgba(0, 188, 212, 0.6);
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .deals-discounts .deals-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals-discounts .deals-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.store-introduction:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+
+
+/* Events Section */
+.events-section {
+    padding: 60px 20px; /* Spacing around the section */
+    background: #111; /* Dark background color */
+    color: #fff; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Clean and readable font */
+}
+
+/* Section Title */
+.events-section .section-title {
+    text-align: center; /* Center-align the title */
+    margin-bottom: 40px; /* Space below the title */
+}
+
+.events-section .section-title h2 {
+    font-size: 2.8rem; /* Large font size for the title */
+    margin-bottom: 15px; /* Space below the heading */
+    color: #00bcd4; /* Highlighted color */
+    text-transform: uppercase; /* Uppercase for emphasis */
+    letter-spacing: 1.5px; /* Slight spacing between letters */
+}
+
+.events-section .section-title p {
+    font-size: 1.2rem; /* Slightly smaller font size for subtitle */
+    color: #aaa; /* Lighter gray for secondary text */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Events List Grid */
+.events-section .events-list {
+    display: grid; /* Create a grid layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 30px; /* Space between grid items */
+    padding: 20px 0; /* Space above and below the grid */
+}
+
+/* Individual Event Items */
+.events-section .event-item {
+    background: linear-gradient(135deg, #222, #333); /* Gradient for subtle depth */
+    padding: 20px; /* Internal spacing */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.3); /* Glow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    position: relative;
+    overflow: hidden; /* Prevent content overflow */
+}
+
+/* Event Item Hover Effect */
+.events-section .event-item:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 0 25px rgba(0, 188, 212, 0.6); /* Enhanced glow on hover */
+}
+
+/* Event Item Title */
+.events-section .event-item h3 {
+    font-size: 2rem; /* Large size for event title */
+    margin-bottom: 15px; /* Space below the title */
+    color: #00bcd4; /* Highlight color */
+}
+
+/* Event Item Text */
+.events-section .event-item p {
+    color: #ccc; /* Neutral gray for descriptions */
+    margin-bottom: 15px; /* Space below text */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Bullet and Numbered Lists */
+.events-section .event-item ul,
+.events-section .event-item ol {
+    margin: 0; /* Reset margin */
+    padding-left: 20px; /* Indent list items */
+    color: #bbb; /* Slightly lighter text */
+    font-size: 1rem; /* Standard font size for lists */
+    margin-bottom: 15px; /* Space below lists */
+}
+
+.events-section .event-item ul li,
+.events-section .event-item ol li {
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.events-section .event-item ul li strong,
+.events-section .event-item ol li strong {
+    color: #fff; /* Highlight important text */
+}
+
+/* See More Button */
+.events-section .see-more-button {
+    text-align: center; /* Center-align button */
+    margin-top: 40px; /* Space above button */
+}
+
+/* Button Styling */
+.events-section .cta-button {
+    padding: 12px 30px; /* Internal button padding */
+    background: #00bcd4; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 1.1rem; /* Slightly larger text for buttons */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded button corners */
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3); /* Glow effect */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.events-section .cta-button:hover {
+    transform: translateY(-3px); /* Button lifts slightly on hover */
+    background: #008ba3; /* Darker shade for hover state */
+    box-shadow: 0 5px 20px rgba(0, 188, 212, 0.6); /* Enhanced glow on hover */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .events-section {
+        padding: 50px 15px; /* Adjust padding for smaller screens */
+    }
+
+    .events-section .section-title h2 {
+        font-size: 2.2rem; /* Smaller title size for tablets */
+    }
+
+    .events-section .section-title p {
+        font-size: 1rem; /* Adjust text size */
+    }
+
+    .events-section .events-list {
+        gap: 20px; /* Reduce spacing between items */
+    }
+}
+
+@media (max-width: 480px) {
+    .events-section {
+        padding: 40px 10px; /* Adjust padding for mobile */
+    }
+
+    .events-section .section-title h2 {
+        font-size: 2rem; /* Smaller title size for mobile */
+    }
+
+    .events-section .section-title p {
+        font-size: 0.9rem; /* Adjust text size */
+    }
+
+    .events-section .events-list {
+        gap: 15px; /* Reduce spacing for mobile */
+    }
+
+    .events-section .cta-button {
+        font-size: 1rem; /* Smaller button size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+}
+
+
+
+
+
+
+
+/* Featured Games Section */
+.featured-games {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0a0a0a, #000); /* Gradient background */
+    color: #fff;
+}
+
+.featured-games .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.featured-games .section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00bcd4; /* Neon Blue */
+    /* Removed the glow effect */
+}
+
+.featured-games .section-title p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.featured-games .game-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.featured-games .game-item {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.3); /* Neon Glow */
+}
+
+.featured-games .game-item:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.7); /* Enhanced Glow */
+}
+
+.featured-games .game-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.featured-games .game-item:hover img {
+    transform: scale(1.1); /* Slight zoom effect on image */
+}
+
+.featured-games .game-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #fff; /* Changed to white */
+    /* Removed the glow effect */
+}
+
+.featured-games .game-item p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.featured-games .game-item a {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+.featured-games .game-item a:hover {
+    background: #008ba3;
+    box-shadow: 0 0 20px #00bcd4;
+}
+
+/* Explore Button Styles - Smaller Version */
+.explore-container {
+    text-align: center;
+    margin-top: 40px; /* Adjust the margin */
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px; /* Reduced padding for smaller button */
+    background-color: #00bcd4; /* Neon Blue */
+    color: #fff;
+    font-size: 1rem; /* Smaller font size */
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 188, 212, 0.3); /* Reduced glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    animation: neon-btn-hover 3s infinite alternate;
+}
+
+.explore-button:hover {
+    transform: scale(1.05); /* Slight enlargement on hover */
+    background-color: #008ba3; /* Darker Neon Blue */
+    box-shadow: 0 5px 15px rgba(0, 188, 212, 0.6); /* Stronger glow on hover */
+}
+
+/* Keyframes for Animations */
+@keyframes neon-btn-hover {
+    0% {
+        box-shadow: 0 5px 10px rgba(0, 188, 212, 0.3);
+    }
+    100% {
+        box-shadow: 0 10px 20px rgba(0, 188, 212, 0.6);
+    }
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .featured-games .game-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-games .game-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes neon-text-glow {
+    0% {
+        text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+    }
+    100% {
+        text-shadow: 0 0 20px #00bcd4, 0 0 40px #00bcd4, 0 0 60px #00bcd4;
+    }
+}
+
+@keyframes neon-img-glow {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 188, 212, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 30px rgba(0, 188, 212, 0.8);
+    }
+}
+
+@keyframes neon-btn-hover {
+    0% {
+        box-shadow: 0 5px 15px rgba(0, 188, 212, 0.4);
+    }
+    100% {
+        box-shadow: 0 10px 30px rgba(0, 188, 212, 0.8);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* General Styles */
+.welcome-message {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    overflow: hidden;
+}
+
+/* Slideshow Container */
+.slideshow-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.mySlides {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: fadeEffect 15s infinite;
+    opacity: 0;
+}
+
+.mySlides:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.mySlides:nth-child(2) {
+    animation-delay: 5s;
+}
+
+.mySlides:nth-child(3) {
+    animation-delay: 10s;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fade Animation */
+@keyframes fadeEffect {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    60% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Neon Box */
+.neon-box {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px 40px;
+    border: 2px solid #00bcd4;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00bcd4, 0 0 30px #00bcd4;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s forwards;
+    animation-delay: 0.2s; /* Delay for smoother entrance */
+}
+
+/* Heading Animation */
+.neon-box h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00bcd4; /* Remove glow from heading */
+    text-shadow: none; /* Removed glow from text */
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s forwards;
+    animation-delay: 0.4s; /* Delay for smoother entrance */
+}
+
+/* Slide-up keyframes */
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Apply animation to paragraph text */
+.neon-box p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s forwards;
+    animation-delay: 0.6s; /* Delay for smoother entrance */
+}
+
+/* Apply animation to the button */
+.neon-box .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00bcd4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slide-up 1s forwards;
+    animation-delay: 0.8s; /* Delay for smoother entrance */
+}
+
+.neon-box .cta-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+}
+
+
+
+
+
+
+
+
+/* Trending Games Section */
+.trending-games {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0a0a0a, #000);
+    color: #fff;
+}
+
+.trending-games .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.trending-games .section-title h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #00bcd4; /* Neon Blue */
+    /* Removed the glow effect */
+}
+
+.trending-games .section-title p {
+    font-size: 1.2rem;
+    color: #aaa;
+}
+
+.trending-games .game-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 20px 0;
+}
+
+.trending-games .game-item {
+    background: #111;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 188, 212, 0.3);
+}
+
+.trending-games .game-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 188, 212, 0.7);
+}
+
+.trending-games .game-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+.trending-games .game-item:hover img {
+    transform: scale(1.1);
+}
+
+.trending-games .game-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+    color: #fff; /* Changed to white */
+    /* Removed the glow effect */
+}
+
+.trending-games .game-item p {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.trending-games .game-item a {
+    background: #00bcd4;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+.trending-games .game-item a:hover {
+    background: #008ba3;
+    box-shadow: 0 0 20px #00bcd4;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .trending-games .game-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .trending-games .game-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Newsletter Section */
+.newsletter {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, #0a0a0a, #000); /* Dark background */
+    color: #fff;
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Neon Blue */
+    margin-bottom: 15px;
+}
+
+.newsletter p {
+    font-size: 1.2rem;
+    color: #aaa;
+    margin-bottom: 25px;
+}
+
+.newsletter .newsletter-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.newsletter .newsletter-form input {
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #00bcd4;
+    width: 300px;
+    max-width: 80%;
+    background-color: #222;
+    color: #fff;
+}
+
+.newsletter .newsletter-form button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    background-color: #00bcd4; /* Neon Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.newsletter .newsletter-form button:hover {
+    background-color: #008ba3; /* Darker Neon Blue */
+    box-shadow: 0 0 10px #00bcd4;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .newsletter .newsletter-form {
+        flex-direction: column;
+    }
+
+    .newsletter .newsletter-form input {
+        width: 100%;
+    }
+
+    .newsletter .newsletter-form button {
+        width: 100%;
+        margin-top: 10px;
+    }
+} 

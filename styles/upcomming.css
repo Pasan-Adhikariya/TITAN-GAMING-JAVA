@@ -1,0 +1,358 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+h1, h3 {
+  color: #00ffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  padding: 40px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+
+/* Upcoming Games Section */
+#upcoming-games {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#upcoming-games .section-header {
+  margin-bottom: 2rem;
+}
+
+#upcoming-games .section-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00e6e6;
+  text-shadow: 0 0 10px #00e6e6, 0 0 20px #009999;
+}
+
+#upcoming-games .section-header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin: 1rem auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+#upcoming-games .games-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Game Card */
+#upcoming-games .game-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 300px;
+}
+
+#upcoming-games .game-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+#upcoming-games .game-card figure {
+  position: relative;
+  margin: 0;
+}
+
+#upcoming-games .game-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+#upcoming-games .game-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Hover Overlay */
+#upcoming-games .game-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  text-align: center;
+}
+
+#upcoming-games .game-card:hover .game-hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#upcoming-games .game-hover p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+  color: #cccccc;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+/* Caption Below Image */
+#upcoming-games .game-card figcaption {
+  padding: 1rem;
+  background-color: #202020;
+  text-align: left;
+  border-top: 2px solid #00e6e6;
+}
+
+#upcoming-games .game-card h3 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+#upcoming-games .genre,
+#upcoming-games .platforms {
+  font-size: 0.9rem;
+  color: #cccccc;
+  margin-bottom: 0.3rem;
+}
+
+/* Pre-Order Button */
+#upcoming-games .pre-order-btn {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #00e6e6;
+  color: #000;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#upcoming-games .pre-order-btn:hover {
+  background-color: #009999;
+  color: #fff;
+}
+
+/* Placeholder Card */
+#upcoming-games .placeholder {
+  background: #333333;
+  border: 2px dashed #666666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+  font-size: 1.2rem;
+  height: 300px;
+  text-transform: uppercase;
+}
+
+/* Responsive Grid */
+@media (max-width: 1024px) {
+  #upcoming-games .game-card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 600px) {
+  #upcoming-games .game-card {
+    flex: 1 1 100%;
+  }
+}
+
+/* Featured Reviews Section Styling */
+#featured-reviews {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  color: #ffffff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#featured-reviews .section-header {
+  margin-bottom: 2rem;
+}
+
+#featured-reviews .section-header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #00e6e6;
+  text-shadow: 0 0 10px #00e6e6, 0 0 20px #009999;
+}
+
+#featured-reviews .section-header p {
+  font-size: 1.2rem;
+  color: #cccccc;
+  margin: 1rem auto;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+#featured-reviews .reviews-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+#featured-reviews .review-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 300px;
+}
+
+#featured-reviews .review-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+#featured-reviews .review-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: #202020;
+  border-bottom: 2px solid #00e6e6;
+}
+
+#featured-reviews .reviewer-avatar {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+#featured-reviews .reviewer-details h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+}
+
+#featured-reviews .reviewer-details .review-date {
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+#featured-reviews .review-card blockquote {
+  font-size: 1rem;
+  font-style: italic;
+  color: #cccccc;
+  padding: 1rem;
+  background-color: #202020;
+  border-top: 2px solid #00e6e6;
+}
+
+#featured-reviews .review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #1a1a1a;
+}
+
+#featured-reviews .rating {
+  color: #ffffff;
+}
+
+#featured-reviews .stars {
+  color: #ffc107;
+}
+
+#featured-reviews .review-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+#featured-reviews .review-actions button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#featured-reviews .report-btn {
+  background-color: #f44336;
+  color: #ffffff;
+}
+
+#featured-reviews .report-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Placeholder Styling */
+#featured-reviews .review-card.placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #333333;
+  border: 2px dashed #666666;
+  height: 200px;
+  color: #cccccc;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+#featured-reviews .section-divider {
+  border: none;
+  border-top: 1px solid #808080;
+  margin: 2rem 0;
+  width: 100%;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #featured-reviews .review-card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  #featured-reviews .review-card {
+    flex: 1 1 100%;
+  }
+}

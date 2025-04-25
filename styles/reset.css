@@ -1,0 +1,47 @@
+/* Apply box-sizing border-box globally */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, figure, blockquote, pre, table, td, th {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove default list styling */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove link styling */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default border from images */
+img {
+    border: 0;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove border from form elements */
+input, textarea, select, button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+/* Set default font properties */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Ensure the body and html elements take up the full height */
+html, body {
+    height: 100%;
+}

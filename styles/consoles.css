@@ -1,0 +1,319 @@
+
+/* ========================= */
+/* HERO SECTION STYLING     */
+/* ========================= */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.4);
+  }
+  
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    max-width: 700px;
+    padding: 0 20px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #00ffff;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+  }
+  
+  .cta-button {
+    background: transparent;
+    color: #00ffff;
+    border: 2px solid #00ffff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #00ffff;
+    color: #000;
+    box-shadow: 0 0 10px #00ffff;
+  }
+  
+  /* ========================= */
+  /* INTRO SECTION STYLING    */
+  /* ========================= */
+  .console-intro-section {
+    background: #1a1a1a;
+    padding: 60px 20px 40px;
+    border-bottom: 1px solid #2c2c2c;
+  }
+  
+  .intro-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    color: #ddd;
+  }
+  
+  .intro-title {
+    font-size: 2.5rem;
+    color: #00bcd4;
+    margin-bottom: 20px;
+  }
+  
+  .intro-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 15px;
+  }
+  
+  .intro-highlight {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #00ffff;
+    margin-top: 10px;
+  }
+  
+  /* ========================= */
+  /* RESPONSIVE DESIGN        */
+  /* ========================= */
+  @media (max-width: 768px) {
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-description {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      font-size: 1rem;
+      padding: 10px 25px;
+    }
+  
+    .intro-title {
+      font-size: 2rem;
+    }
+  
+    .intro-description,
+    .intro-highlight {
+      font-size: 1rem;
+    }
+  }
+  
+
+/* ---------- Section Wrapper ---------- */
+.consoles-grid-section {
+    padding: 60px 20px;
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  .section-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .section-title {
+    font-size: 2.8rem;
+    color: #00bcd4;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    font-size: 1.2rem;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* ---------- Grid Layout ---------- */
+  .consoles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+  }
+  
+  /* ---------- Console Card ---------- */
+  .console-item {
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+  }
+  
+  .console-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0, 188, 212, 0.25);
+  }
+  
+  /* ---------- Image Styling ---------- */
+  .console-image {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .console-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  
+  .console-item:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* ---------- Price on Hover ---------- */
+  .console-price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: rgba(0, 188, 212, 0.85);
+    color: #000;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .console-item:hover .console-price {
+    opacity: 1;
+  }
+  
+  /* ---------- Button on Hover ---------- */
+  .console-hover {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .console-item:hover .console-hover {
+    opacity: 1;
+  }
+  
+  .view-details {
+    background-color: #00bcd4;
+    color: #000;
+    padding: 8px 20px;
+    border-radius: 8px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 188, 212, 0.3);
+  }
+  
+  .view-details:hover {
+    background-color: #00e5ff;
+    box-shadow: 0 0 20px rgba(0, 188, 212, 0.6);
+  }
+  
+  /* ---------- Console Details ---------- */
+  .console-details {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .console-name {
+    font-size: 1.4rem;
+    color: #00ffff;
+    margin-bottom: 10px;
+  }
+  
+  .console-specs {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 0.95rem;
+    color: #bbb;
+  }
+  
+  .console-specs li {
+    padding: 5px 0;
+    border-bottom: 1px solid #2c2c2c;
+  }
+  
+  /* ---------- Rating ---------- */
+  .console-rating {
+    margin-top: 12px;
+    font-size: 1.1rem;
+    color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+  
+  .rating-count {
+    color: #aaa;
+  }
+  
+  /* ---------- Responsive Design ---------- */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .section-description {
+      font-size: 1rem;
+    }
+  
+    .console-name {
+      font-size: 1.2rem;
+    }
+  
+    .view-details {
+      font-size: 0.9rem;
+      padding: 6px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .consoles-grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+  
+    .console-details {
+      padding: 15px;
+    }
+  
+    .console-specs li {
+      font-size: 0.9rem;
+    }
+  }
+  
+  
+  
